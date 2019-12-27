@@ -26,7 +26,7 @@ let thePromise = new Promise((resolve, reject) =>
             //if not between 1-8 re-prompts user
             if(theAnswer > 0 && theAnswer < 9)
             {
-                rl.close;
+                rl.close();
                 resolve.apply("done");
             }
             else
