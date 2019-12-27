@@ -4,14 +4,12 @@ exports.marioPyramid = (pyramidHeight) =>
 
     for(let i = 0; i < pyramidHeight; i++)
     {
-        let pyramidBlocks = "";
-        theSpaces =  " ".repeat(spaces);
+        let pyramidBlocks = "#".repeat(((i + 1) * 2) - 1);
+        let theSpaces =  " ".repeat(spaces);
 
-        pyramidBlocks += theSpaces;
-        pyramidBlocks += "#".repeat(((i + 1) * 2) - 1);
-        pyramidBlocks += theSpaces;
+        pyramid = theSpaces + pyramidBlocks + theSpaces;
 
-        console.log(pyramidBlocks);
+        console.log(pyramid);
         spaces --;
     }
 };
